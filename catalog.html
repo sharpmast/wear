@@ -1,0 +1,1270 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="./assets/img/favicon.png">
+		<title>Каталог</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1790609711125"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1790609711125">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header-scroll="" data-fls-header-scroll-show="" class="header">
+				<div class="header__container">
+					<a href="#" class="header__logo">
+						<div class="header__logo-img __img">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/sv_logo-1-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/sv_logo-1-1200.webp" type="image/webp">
+								<img alt="Image" src="./assets/img/sv_logo-1.webp">
+							</picture>
+						</div>
+						<div class="header__logo-img __img">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/sv_logo-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/sv_logo-1200.webp" type="image/webp">
+								<img alt="Image" src="./assets/img/sv_logo.webp">
+							</picture>
+						</div>
+					</a>
+					<nav class="header__menu menu">
+						<ul class="header__list menu__list">
+							<li>
+								<a class="menu__link" href="index.html">Головна</a>
+							</li>
+							<li>
+								<a class="menu__link" href="catalog.html">Каталог</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#">Чоловікам</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#">Жінкам</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#">Взуття</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#">Аксесуари</a>
+							</li>
+							<li>
+								<a class="menu__link" href="index.html#blog">Блог</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__buttons">
+						<a href="#" class="header__btn --icon-search"></a>
+						<a href="#" class="header__btn --icon-hearth"></a>
+						<a href="#" class="header__btn --icon-user"></a>
+						<button class="header__btn header__btn-cart cart-action --icon-cart">
+							<span data-fls-addtocart="" class="cart-counter"></span>
+						</button>
+					</div>
+					<div class="menu__icon">
+						<span></span>
+					</div>
+				</div>
+			</header>
+			<div class="cart">
+				<div class="cart__overlay cart-action"></div>
+				<div class="cart__body">
+					<div class="cart__top">
+						<div class="cart__title">Кошик</div>
+						<button class="cart__btn cart-action"></button>
+					</div>
+					<div class="cart__items">
+						<span class="cart__void">Корзина порожня</span>
+						<template id="cart-item-template">
+							<div class="cart__item">
+								<div class="cart__item-img __img">
+									<img src="" alt="">
+								</div>
+								<div class="cart__item-text">
+									<div class="cart__item-title"></div>
+									<div class="cart__item-price">
+										<span data-fls-cart-price=""></span>
+										<span>грн.</span>
+									</div>
+								</div>
+								<div class="cart__item-buttons">
+									<div data-fls-quantity="" class="cart__quantity">
+										<button data-fls-quantity-minus="" type="button" class="cart__quantity-btn"></button>
+										<div class="cart__quantity-input">
+											<input data-fls-addtocart-quantity="" data-fls-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<button data-fls-quantity-plus="" type="button" class="cart__quantity-btn cart__quantity-btn--plus"></button>
+									</div>
+									<button type="button" class="cart__remove">×</button>
+								</div>
+							</div>
+						</template>
+					</div>
+					<div class="cart__footer">
+						<div class="cart__total">
+							<span>Разом</span>
+							<span data-fls-cart-total="">0</span>
+							<span>грн.</span>
+						</div>
+						<div class="cart__button">
+							<button class="cart__action-btn btn--yellow">Оформити замовлення</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<main class="page-catalog">
+				<section data-fls-slider="" class="hero swiper">
+					<div class="hero__wrapper swiper-wrapper">
+						<div class="hero__slide swiper-slide">
+							<div class="hero__text-container __container">
+								<div class="hero__text">
+									<div class="hero__label" data-swiper-parallax="100">НОВА КОЛЕКЦІЯ 2026</div>
+									<h2 class="hero__title" data-swiper-parallax="200">
+										Стиль, що
+										<span>захоплює</span>
+									</h2>
+									<div class="hero__subtitle" data-swiper-parallax="300">
+										<p>
+											Сучасний одяг, взуття та аксесуари для тих, хто цінує комфорт, якість і свободу руху.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="hero__image __img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/tourist-wear-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/tourist-wear-1200.webp" type="image/webp">
+									<img alt="Image" src="./assets/img/tourist-wear.webp">
+								</picture>
+							</div>
+						</div>
+						<div class="hero__slide swiper-slide">
+							<div class="hero__text-container __container">
+								<div class="hero__text">
+									<div class="hero__label" data-swiper-parallax="100">ТРЕНДИ СЕЗОНУ</div>
+									<h2 class="hero__title" data-swiper-parallax="200">
+										Чоловічий
+										<span>одяг</span>
+									</h2>
+									<div class="hero__subtitle" data-swiper-parallax="300">
+										<p>
+											Оновіть свій гардероб унікальними новинками, створеними за останнїми світовими
+                                тенденціями моди.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="hero__image __img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/mans-wear-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/mans-wear-1200.webp" type="image/webp">
+									<img alt="Image" src="./assets/img/mans-wear.webp">
+								</picture>
+							</div>
+						</div>
+						<div class="hero__slide swiper-slide">
+							<div class="hero__text-container __container">
+								<div class="hero__text">
+									<div class="hero__label" data-swiper-parallax="100">ПРЕМІУМ ЯКІСТЬ</div>
+									<h2 class="hero__title" data-swiper-parallax="200">
+										Комфорт у
+										<span>кожній деталі</span>
+									</h2>
+									<div class="hero__subtitle" data-swiper-parallax="300">
+										<p>
+											Добірні матеріали, бездоганний крій та виняткова зносостійкість для вашого щоденного
+                                задоволення.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="hero__image __img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/sports-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/sports-1200.webp" type="image/webp">
+									<img alt="Image" src="./assets/img/sports.webp">
+								</picture>
+							</div>
+						</div>
+						<div class="hero__slide swiper-slide">
+							<div class="hero__text-container __container">
+								<div class="hero__text">
+									<div class="hero__label" data-swiper-parallax="100">ОБМЕЖЕНИЙ ВИПУСК</div>
+									<h2 class="hero__title" data-swiper-parallax="200">
+										Створи свій
+										<span>унікальний образ</span>
+									</h2>
+									<div class="hero__subtitle" data-swiper-parallax="300">
+										<p>
+											Ексклюзивні моделі, які підкреслять вашу індивідуальність та подарують впевненість у
+                                будь-якій ситуації.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="hero__image __img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/girl-wear-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/girl-wear-1200.webp" type="image/webp">
+									<img alt="Image" src="./assets/img/girl-wear.webp">
+								</picture>
+							</div>
+						</div>
+					</div>
+					<div class="hero__slider-buttons">
+						<div class="hero__slider-buttons-container __container">
+							<div class="hero__slider-prev --icon-prev"></div>
+							<div class="hero__slider-next --icon-prev"></div>
+						</div>
+					</div>
+					<div class="hero__slider-pagination">
+						<div class="hero__slider-pagination-container __container">
+							<div class="hero__slider-pagination-body"></div>
+						</div>
+					</div>
+				</section>
+				<section class="product catalog--product">
+					<div class="product__container">
+						<div class="product__header section-header">
+							<h1 class="product__title title section-header__title">Популярні товари</h1>
+							<ul class="product__list section-header__list">
+								<li>
+									<a href="catalog.html" class="product__link section-header__link">Усі товари</a>
+								</li>
+								<li>
+									<a href="catalog.html" class="product__link section-header__link">Хіти продажу</a>
+								</li>
+								<li>
+									<a href="catalog.html" class="product__link section-header__link">Новинки</a>
+								</li>
+								<li>
+									<a href="catalog.html" class="product__link section-header__link">Знижки</a>
+								</li>
+							</ul>
+						</div>
+						<div data-fls-slider="" class="product__slider swiper">
+							<div class="product__cards swiper-wrapper">
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/prod2-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/prod2-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/prod2.webp">
+										</picture>
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--yellow btn--red">-20%</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.2" class="product__card-raiting-value card__raiting-value">4.2</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">98</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Пальто жіноче</a>
+									<div class="product__card-caption card__caption">Жіночий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">3199</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span>3999</span>
+											<span>грн</span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="1" data-title="Пальто жіноче" data-price="3199" data-image="assets/img/prod2.webp" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/prod1-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/prod1-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/prod1.webp">
+										</picture>
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.8" class="product__card-raiting-value card__raiting-value">4.8</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">124</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Худі Nike Club</a>
+									<div class="product__card-caption card__caption">Чоловічий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">2499</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="2" data-title="Худі Nike Club" data-price="2499" data-image="assets/img/prod1.jpg" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/prod3-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/prod3-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/prod3.webp">
+										</picture>
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green btn--blue">Новинка</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.4" class="product__card-raiting-value card__raiting-value">4.4</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">203</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Кросівки Nike Air Force 1</a>
+									<div class="product__card-caption card__caption">Взуття</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">4999</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="3" data-title="Кросівки Nike Air Force 1" data-price="4999" data-image="assets/img/prod3.webp" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/prod4-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/prod4-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/prod4.webp">
+										</picture>
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green btn--red">-15%</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.5" class="product__card-raiting-value card__raiting-value">4.5</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">76</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Черевики жіночі</a>
+									<div class="product__card-caption card__caption">Взуття</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">5099</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span>5999</span>
+											<span>грн</span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="4" data-title="Черевики жіночі" data-price="5099" data-image="assets/img/prod4.jpg" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/prod5-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/prod5-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/prod5.webp">
+										</picture>
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.8" class="product__card-raiting-value card__raiting-value">4.8</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">65</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Рюкзак The North Face</a>
+									<div class="product__card-caption card__caption">Аксесуари</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">2199</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="5" data-title="Рюкзак The North Face" data-price="2199" data-image="assets/img/prod5.webp" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+							</div>
+							<div class="category__slider-pagination-body">
+								<div class="product__slider-pagination slider-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="product">
+					<div class="product__container">
+						<div class="product__header section-header">
+							<h1 class="product__title title section-header__title">Жіночий одяг</h1>
+						</div>
+						<div data-fls-slider="" class="product__slider swiper">
+							<div class="product__cards swiper-wrapper">
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/woman/woman1.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--blue">Новинка</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.2" class="product__card-raiting-value card__raiting-value">4.2</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">98</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Спортивний костюм</a>
+									<div class="product__card-caption card__caption">Жіночий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">1699</span>
+											<span>грн</span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="6" data-title="Спортивний костюм" data-price="1699" data-image="assets/img/woman/woman1.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/woman/woman2.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.3" class="product__card-raiting-value card__raiting-value">4.3</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">194</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Жіночий костюм ZARA</a>
+									<div class="product__card-caption card__caption">Бізнес костюм</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">7499</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="7" data-title="Жіночий костюм ZARA" data-price="7499" data-image="assets/img/woman/woman2.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/woman/woman3.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green btn--blue">Новинка</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.0" class="product__card-raiting-value card__raiting-value">4.0</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">103</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Сукня жіноча</a>
+									<div class="product__card-caption card__caption">Жіночий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">1999</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="8" data-title="Сукня жіноча" data-price="1999" data-image="assets/img/woman/woman3.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/prod4-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/prod4-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/prod4.webp">
+										</picture>
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green btn--red">-15%</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.5" class="product__card-raiting-value card__raiting-value">4.5</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">76</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Черевики жіночі</a>
+									<div class="product__card-caption card__caption">Взуття</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">5099</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span>5999</span>
+											<span>грн</span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="4" data-title="Черевики жіночі" data-price="5099" data-image="assets/img/prod4.jpg" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/woman/woman4.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.0" class="product__card-raiting-value card__raiting-value">4.0</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">165</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Спортивний костюм Nike</a>
+									<div class="product__card-caption card__caption">Жіночий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">6199</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="9" data-title="Спортивний костюм Nike" data-price="6199" data-image="assets/img/woman/woman4.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+							</div>
+							<div class="category__slider-pagination-body">
+								<div class="product__slider-pagination slider-pagination"></div>
+							</div>
+						</div>
+						<div data-fls-slider="" class="product__slider swiper">
+							<div class="product__cards swiper-wrapper">
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/woman/woman11.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.8" class="product__card-raiting-value card__raiting-value">4.8</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">198</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Кофточка</a>
+									<div class="product__card-caption card__caption">Жіночий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">1099</span>
+											<span>грн</span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="10" data-title="Кофточка" data-price="1099" data-image="assets/img/woman/woman11.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/woman/woman12.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--blue">Новинка</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.0" class="product__card-raiting-value card__raiting-value">4.0</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">14</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Футболка ZARA</a>
+									<div class="product__card-caption card__caption">Футболка</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">499</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="11" data-title="Футболка ZARA" data-price="499" data-image="assets/img/woman/woman12.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/woman/woman13.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.5" class="product__card-raiting-value card__raiting-value">4.5</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">503</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Сукня жіноча</a>
+									<div class="product__card-caption card__caption">Жіночий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">4999</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="13" data-title="Сукня жіноча" data-price="4999" data-image="assets/img/woman/woman13.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/woman/woman14.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green btn--red">-15%</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.9" class="product__card-raiting-value card__raiting-value">4.9</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">16</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Пальто Woman</a>
+									<div class="product__card-caption card__caption">Жіночий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">6089</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span>6999</span>
+											<span>грн</span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="14" data-title="Пальто Woman" data-price="5099" data-image="assets/img/woman/woman14.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/woman/woman15.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.9" class="product__card-raiting-value card__raiting-value">4.9</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">15</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Шуба Хутро</a>
+									<div class="product__card-caption card__caption">Жіночий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">61199</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="15" data-title="Шуба Хутро" data-price="61199" data-image="assets/img/woman/woman15.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+							</div>
+							<div class="category__slider-pagination-body">
+								<div class="product__slider-pagination slider-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="product">
+					<div class="product__container">
+						<div class="product__header section-header">
+							<h1 class="product__title title section-header__title">Чолвічий одяг</h1>
+						</div>
+						<div data-fls-slider="" class="product__slider swiper">
+							<div class="product__cards swiper-wrapper">
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/man/man1.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--blue">Новинка</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.2" class="product__card-raiting-value card__raiting-value">4.2</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">498</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Куртка Джинс</a>
+									<div class="product__card-caption card__caption">Чоловічий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">1899</span>
+											<span>грн</span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="16" data-title="Куртка Джинс" data-price="1899" data-image="assets/img/man/man1.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/man/man2.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--red">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="1.3" class="product__card-raiting-value card__raiting-value">1.3</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">194</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Чоловічий костюм ZARA</a>
+									<div class="product__card-caption card__caption">Бізнес костюм</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">71499</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="7" data-title="Чоловічий костюм ZARA" data-price="71499" data-image="assets/img/man/man2.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/man/man3.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.9" class="product__card-raiting-value card__raiting-value">4.9</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">156</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Чоловічий Костюм</a>
+									<div class="product__card-caption card__caption">Чоловічий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">4999</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="17" data-title="Чоловічий Костюм" data-price="4999" data-image="assets/img/man/man3.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/man/man4.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green btn--red">-15%</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.5" class="product__card-raiting-value card__raiting-value">4.5</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">46</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Куртка шкіра</a>
+									<div class="product__card-caption card__caption">Чоловічий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">7099</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span>8999</span>
+											<span>грн</span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="18" data-title="Куртка шкіра" data-price="7099" data-image="assets/img/man/man4.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/man/man5.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.0" class="product__card-raiting-value card__raiting-value">4.0</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">165</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Спортивний костюм Nike</a>
+									<div class="product__card-caption card__caption">Чоловічий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">6199</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="19" data-title="Спортивний костюм Nike" data-price="6199" data-image="assets/img/man/man5.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+							</div>
+							<div class="category__slider-pagination-body">
+								<div class="product__slider-pagination slider-pagination"></div>
+							</div>
+						</div>
+						<div data-fls-slider="" class="product__slider swiper">
+							<div class="product__cards swiper-wrapper">
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/man/man6.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--yellow btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.8" class="product__card-raiting-value card__raiting-value">4.8</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">188</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Кофта</a>
+									<div class="product__card-caption card__caption">Чоловічий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">1799</span>
+											<span>грн</span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="20" data-title="Кофта" data-price="1799" data-image="assets/img/man/man6.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/man/man7.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--blue">Новинка</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.6" class="product__card-raiting-value card__raiting-value">4.6</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">134</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Худі</a>
+									<div class="product__card-caption card__caption">Чоловічий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">1499</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="21" data-title="Худі" data-price="1499" data-image="assets/img/man/man7.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/man/man8.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.5" class="product__card-raiting-value card__raiting-value">4.5</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">53</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Куртка зимова</a>
+									<div class="product__card-caption card__caption">Чоловічий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">15999</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="22" data-title="Куртка зимова" data-price="15999" data-image="assets/img/man/man8.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/man/man9-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/man/man9-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/man/man9.webp">
+										</picture>
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green btn--red">-15%</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.9" class="product__card-raiting-value card__raiting-value">4.9</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">176</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Штани</a>
+									<div class="product__card-caption card__caption">Чоловічий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">2099</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span>2999</span>
+											<span>грн</span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="23" data-title="Штани" data-price="2099" data-image="assets/img/man/man9.jpg" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<img src="./assets/img/man/man10.jfif" alt="Image">
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.9" class="product__card-raiting-value card__raiting-value">4.9</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">15</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Футболка Wild</a>
+									<div class="product__card-caption card__caption">Чоловічий одяг</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">1199</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="24" data-title="Футболка Wild" data-price="1199" data-image="assets/img/man/man10.jfif" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+							</div>
+							<div class="category__slider-pagination-body">
+								<div class="product__slider-pagination slider-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer id="contacts" class="footer" data-fls-footer="">
+				<div class="footer__bg __img">
+					<picture>
+						<source media="(max-width: 600px)" srcset="./assets/img/footer-bg-1-600.webp" type="image/webp">
+						<source media="(max-width: 1200px)" srcset="./assets/img/footer-bg-1-1200.webp" type="image/webp">
+						<img alt="Image" src="./assets/img/footer-bg-1.webp">
+					</picture>
+				</div>
+				<div class="footer__container">
+					<div class="footer__items">
+						<div class="footer__text">
+							<div class="footer__logo __img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/sv_logo-1-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/sv_logo-1-1200.webp" type="image/webp">
+									<img alt="Image" src="./assets/img/sv_logo-1.webp">
+								</picture>
+							</div>
+							<div class="footer__text-title">Підпишіться на новини та акції</div>
+							<div class="footer__text-caption">
+								<p>Ми створюємо стиль для вашого комфорту, свободи та впевненості.</p>
+								<p>Будьте собою. Будьте в стилі</p>
+							</div>
+							<div class="footer__text-icons">
+								<a href="#" class="footer__text-ico --icon-insta"></a>
+								<a href="#" class="footer__text-ico --icon-facebook"></a>
+								<a href="#" class="footer__text-ico --icon-youtube"></a>
+								<a href="#" class="footer__text-ico --icon-telegram"></a>
+							</div>
+						</div>
+						<div data-fls-spollers="890,max" class="footer__navigation">
+							<details class="footer__navigation-item">
+								<summary class="footer__navigation-title">Каталог</summary>
+								<ul class="footer__navigation-list">
+									<li>
+										<a href="#" class="footer__navigation-link">Чоловікам</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Жінкам</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Взуття</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Аксесуари</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Новинки</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Знижки</a>
+									</li>
+								</ul>
+							</details>
+							<details class="footer__navigation-item">
+								<summary class="footer__navigation-title">Допомога</summary>
+								<ul class="footer__navigation-list">
+									<li>
+										<a href="#" class="footer__navigation-link">Доставка і оплата</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Повернення</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Обмін товару</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Розмірна сітка</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Контакти</a>
+									</li>
+								</ul>
+							</details>
+						</div>
+						<div class="footer__subscribe">
+							<div class="footer__subscribe-title">Підпишіться на наші новини</div>
+							<div class="footer__subscribe-subtitle">Отримуйте знижки, новинки та ексклюзивні пропозиції</div>
+							<form action="#" class="footer__subscribe-form">
+								<input type="text" placeholder="Ваш email" class="footer__subscribe-input">
+								<button class="footer__subscribe-button --icon-arrow"></button>
+							</form>
+							<div class="footer__subscribe-buttons">
+								<a href="#" class="footer__subscribe-link __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/astore-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/astore-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/astore.webp">
+									</picture>
+								</a>
+								<a href="#" class="footer__subscribe-link __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/gplay-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/gplay-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/gplay.webp">
+									</picture>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
