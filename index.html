@@ -1,48 +1,24 @@
 <!doctype html>
-<html lang="uk">
+<html lang="ru">
 	<head>
-		<style data-fls-preloader="false" rel="preload">
-			body>*:not(.fls-preloader) {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    [data-fls-preloader-loaded] body>*:not(.fls-preloader) {
-        transition: opacity 0.5s ease 0s;
-        opacity: 1;
-        visibility: visible;
-    }
-		</style>
-		<!--
-<div class="fls-preloader">
-<div class="fls-preloader__body">
-<div class="fls-preloader__counter">0%</div>
-<div class="fls-preloader__line"><span></span></div>
-</div>
-</div>
--->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="color-scheme" content="light">
-		<meta property="og:image" content="https://sharpcare.netlify.app/assets/img/her1.webp">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="./assets/img/favicon.png">
-		<meta name="description" content="Професійне заточування манікюрних інструментів та ремонт манікюрних апаратів. Заточка кусачок, ножиць, ремонт фрезерів Strong і Marathon. Гарантія на виконані роботи.">
-		<title>Заточування та ремонт</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1791710640170"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1791710640170">
-		<link rel="modulepreload" crossorigin="" href="./js/slider.min.js?v=1791710640170">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1791710640170">
-		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1791710640170">
+		<title>Одяг взуття аксесуари</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1790609711125"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1790609711125">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1790609711125">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1790609711125">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header data-fls-header-scroll="" data-fls-header-scroll-show="" class="header">
 				<div class="header__container">
-					<a href="index.html" class="header__logo">
+					<a href="#" class="header__logo">
 						<div class="header__logo-img __img">
 							<picture>
 								<source media="(max-width: 600px)" srcset="./assets/img/sv_logo-1-600.webp" type="image/webp">
@@ -64,115 +40,85 @@
 								<a class="menu__link" href="index.html">Головна</a>
 							</li>
 							<li>
-								<a class="menu__link" href="catalog.html">Послуги</a>
+								<a class="menu__link" href="catalog.html">Каталог</a>
 							</li>
 							<li>
-								<a class="menu__link" href="repair.html">Ремонт</a>
+								<a class="menu__link" href="#">Чоловікам</a>
 							</li>
 							<li>
-								<a class="menu__link" href="blog.html">Блог</a>
+								<a class="menu__link" href="#">Жінкам</a>
 							</li>
 							<li>
-								<a class="menu__link" href="contacts.html">Контакти</a>
+								<a class="menu__link" href="#">Взуття</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#">Аксесуари</a>
+							</li>
+							<li>
+								<a class="menu__link" href="index.html#blog">Блог</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#">Контакти</a>
 							</li>
 						</ul>
 					</nav>
 					<div class="header__buttons">
-						<a href="tel:+380936004875" class="header__btn header__btn-phone --icon-phone"></a>
-						<a href="https://t.me/Mastersharp_bot" target="_blank" rel="noopener noreferrer" class="header__btn --icon-telegram"></a>
-						<button class="header__btn header__btn-cart --icon-message cart-action"></button>
-						<button data-fls-dynamic=".menu, 625" class="header__button-action btn--green btn--blue cart-action">Написати
-                нам</button>
+						<a href="#" class="header__btn --icon-search"></a>
+						<a href="#" class="header__btn --icon-hearth"></a>
+						<a href="#" class="header__btn --icon-user"></a>
+						<button class="header__btn header__btn-cart cart-action --icon-cart">
+							<span data-fls-addtocart="" class="cart-counter"></span>
+						</button>
 					</div>
 					<div class="menu__icon">
 						<span></span>
 					</div>
 				</div>
 			</header>
-			<div id="modal" class="cart">
+			<div class="cart">
 				<div class="cart__overlay cart-action"></div>
-				<!--
-<div class="cart__body">
-<div class="cart__top">
-<div class="cart__title">Кошик</div>
-<button class="cart__btn cart-action"></button>
-</div>
-<div class="cart__items">
-<span class="cart__void">Корзина порожня</span>
-<template id="cart-item-template">
-<div class="cart__item">
-<div class="cart__item-img __img">
-<img src="" alt="">
-</div>
-<div class="cart__item-text">
-<div class="cart__item-title"></div>
-<div class="cart__item-price">
-<span data-fls-cart-price></span>
-<span>грн.</span>
-</div>
-</div>
-<div class="cart__item-buttons">
-<div data-fls-quantity class="cart__quantity">
-<button data-fls-quantity-minus type="button" class="cart__quantity-btn">
-</button>
-<div class="cart__quantity-input">
-<input data-fls-addtocart-quantity data-fls-quantity-value autocomplete="off"
-type="text" name="form[]" value="1">
-</div>
-<button data-fls-quantity-plus type="button"
-class="cart__quantity-btn cart__quantity-btn--plus">
-</button>
-</div>
-<button type="button" class="cart__remove">
-×
-</button>
-</div>
-</div>
-</template>
-</div>
-<div class="cart__footer">
-<div class="cart__total">
-<span>Разом</span>
-<span data-fls-cart-total>0</span>
-<span>грн.</span>
-</div>
-<div class="cart__button">
-<button class="cart__action-btn btn--yellow">Оформити замовлення</button>
-</div>
-</div>
-</div>
--->
-				<div class="modal__content">
-					<button class="modal__close cart-action">
-						<span></span>
-						<span></span>
-					</button>
-					<div class="modal__icon">
-						<picture>
-							<source media="(max-width: 600px)" srcset="./assets/img/scissor-600.webp" type="image/webp">
-							<source media="(max-width: 1200px)" srcset="./assets/img/scissor-1200.webp" type="image/webp">
-							<img alt="Image" src="./assets/img/scissor.webp">
-						</picture>
+				<div class="cart__body">
+					<div class="cart__top">
+						<div class="cart__title">Кошик</div>
+						<button class="cart__btn cart-action"></button>
 					</div>
-					<h2 class="modal__title">Залишити заявку</h2>
-					<p class="modal__subtitle">Заповніть форму і ми зв'яжемося з вами найближчим часом.</p>
-					<div class="form">
-						<div class="form__group">
-							<label class="form__label">Ваше ім'я</label>
-							<input id="name" class="form__input" type="text" placeholder="Введіть ваше ім'я">
-						</div>
-						<div class="form__group">
-							<label class="form__label">Телефон</label>
-							<input id="phone" class="form__input" type="tel" placeholder="+380">
-						</div>
-						<div class="form__group">
-							<label class="form__label">Повідомлення</label>
-							<textarea id="message" class="form__textarea" placeholder="Ваше повідомлення"></textarea>
-						</div>
-						<button id="sendBtn" class="form__button">Відправити заявку</button>
+					<div class="cart__items">
+						<span class="cart__void">Корзина порожня</span>
+						<template id="cart-item-template">
+							<div class="cart__item">
+								<div class="cart__item-img __img">
+									<img src="" alt="">
+								</div>
+								<div class="cart__item-text">
+									<div class="cart__item-title"></div>
+									<div class="cart__item-price">
+										<span data-fls-cart-price=""></span>
+										<span>грн.</span>
+									</div>
+								</div>
+								<div class="cart__item-buttons">
+									<div data-fls-quantity="" class="cart__quantity">
+										<button data-fls-quantity-minus="" type="button" class="cart__quantity-btn"></button>
+										<div class="cart__quantity-input">
+											<input data-fls-addtocart-quantity="" data-fls-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<button data-fls-quantity-plus="" type="button" class="cart__quantity-btn cart__quantity-btn--plus"></button>
+									</div>
+									<button type="button" class="cart__remove">×</button>
+								</div>
+							</div>
+						</template>
 					</div>
-					<p id="status" style="text-align:center;margin-top:10px;font-size:14px;"></p>
-					<p class="modal__footer">Ми гарантуємо конфіденційність ваших даних</p>
+					<div class="cart__footer">
+						<div class="cart__total">
+							<span>Разом</span>
+							<span data-fls-cart-total="">0</span>
+							<span>грн.</span>
+						</div>
+						<div class="cart__button">
+							<button class="cart__action-btn btn--yellow">Оформити замовлення</button>
+						</div>
+					</div>
 				</div>
 			</div>
 			<main class="page-home">
@@ -181,25 +127,18 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 						<div class="hero__slide swiper-slide">
 							<div class="hero__text-container __container">
 								<div class="hero__text">
-									<div class="hero__label" data-swiper-parallax="-100">ПРОФЕСІЙНЕ ЗАТОЧУВАННЯ ТА РЕМОНТ</div>
-									<h2 class="hero__title" data-swiper-parallax="-200">
-										Профілактика
-										<span>Манікюрного
-                                апарату</span>
+									<div class="hero__label" data-swiper-parallax="100">НОВА КОЛЕКЦІЯ 2026</div>
+									<h2 class="hero__title" data-swiper-parallax="200">
+										Стиль, що
+										<span>захоплює</span>
 									</h2>
-									<div class="hero__subtitle" data-swiper-parallax="-300">
+									<div class="hero__subtitle" data-swiper-parallax="300">
 										<p>
-											Проводимо діагностику та профілактику манікюрних апаратів. Профілактику необхідно
-                                проводити кожні 6 місяців.
+											Сучасний одяг, взуття та аксесуари для тих, хто цінує комфорт, якість і свободу руху.
 										</p>
 									</div>
-									<div class="hero__buttons" data-swiper-parallax="-400">
-										<div class="hero__button-body" data-water-button="">
-											<canvas data-water-canvas="" aria-hidden="true"></canvas>
-											<a href="catalog.html" class="hero__btn btn--yellow btn--glass --icon-arrow">
-												<span>Ціни на профілактику</span>
-											</a>
-										</div>
+									<div class="hero__buttons" data-swiper-parallax="400">
+										<a href="catalog.html" class="hero__btn btn--yellow --icon-arrow">Перейти до каталогу</a>
 									</div>
 								</div>
 							</div>
@@ -214,24 +153,19 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 						<div class="hero__slide swiper-slide">
 							<div class="hero__text-container __container">
 								<div class="hero__text">
-									<div class="hero__label" data-swiper-parallax="100">ПРОФЕСІЙНЕ ЗАТОЧУВАННЯ ТА РЕМОНТ</div>
+									<div class="hero__label" data-swiper-parallax="100">ТРЕНДИ СЕЗОНУ</div>
 									<h2 class="hero__title" data-swiper-parallax="200">
-										Ремонт
-										<span>Манікюрного апарату</span>
+										Сміливі
+										<span>рішення</span>
 									</h2>
 									<div class="hero__subtitle" data-swiper-parallax="300">
 										<p>
-											Проводимо діагностику та ремонт манікюрних фрезерів. Перевіряємо роботу апарата,
-                                усуваємо несправності та, за необхідності, замінюємо зношені комплектуючі.
+											Оновіть свій гардероб унікальними новинками, створеними за останнїми світовими
+                                тенденціями моди.
 										</p>
 									</div>
 									<div class="hero__buttons" data-swiper-parallax="400">
-										<div class="hero__button-body" data-water-button="">
-											<canvas data-water-canvas="" aria-hidden="true"></canvas>
-											<a href="catalog.html" class="hero__btn btn--yellow btn--glass --icon-arrow">
-												<span>Ціни на ремонт</span>
-											</a>
-										</div>
+										<a href="catalog.html" class="hero__btn btn--yellow --icon-arrow">Дивитися новинки</a>
 									</div>
 								</div>
 							</div>
@@ -246,26 +180,19 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 						<div class="hero__slide swiper-slide">
 							<div class="hero__text-container __container">
 								<div class="hero__text">
-									<div class="hero__label" data-swiper-parallax="-100">ПРОФЕСІЙНЕ ЗАТОЧУВАННЯ ТА РЕМОНТ</div>
-									<h2 class="hero__title" data-swiper-parallax="-200">
-										Заточування
-										<span>манікюрного
-                                інструменту</span>
+									<div class="hero__label" data-swiper-parallax="100">ПРЕМІУМ ЯКІСТЬ</div>
+									<h2 class="hero__title" data-swiper-parallax="200">
+										Комфорт у
+										<span>кожній деталі</span>
 									</h2>
-									<div class="hero__subtitle" data-swiper-parallax="-300">
+									<div class="hero__subtitle" data-swiper-parallax="300">
 										<p>
-											Ми не просто заточуємо інструмент — ми відновлюємо його робочі характеристики. Перед
-                                виконанням роботи оцінюємо стан інструменту, а після заточки перевіряємо якість
-                                результату.
+											Добірні матеріали, бездоганний крій та виняткова зносостійкість для вашого щоденного
+                                задоволення.
 										</p>
 									</div>
-									<div class="hero__buttons" data-swiper-parallax="-400">
-										<div class="hero__button-body" data-water-button="">
-											<canvas data-water-canvas="" aria-hidden="true"></canvas>
-											<a href="catalog.html" class="hero__btn btn--yellow btn--glass --icon-arrow">
-												<span>Ціни на заточування</span>
-											</a>
-										</div>
+									<div class="hero__buttons" data-swiper-parallax="400">
+										<a href="catalog.html" class="hero__btn btn--yellow --icon-arrow">Обрати колекцію</a>
 									</div>
 								</div>
 							</div>
@@ -280,25 +207,19 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 						<div class="hero__slide swiper-slide">
 							<div class="hero__text-container __container">
 								<div class="hero__text">
-									<div class="hero__label" data-swiper-parallax="100">ПРОФЕСІЙНЕ ЗАТОЧУВАННЯ ТА РЕМОНТ</div>
+									<div class="hero__label" data-swiper-parallax="100">ОБМЕЖЕНИЙ ВИПУСК</div>
 									<h2 class="hero__title" data-swiper-parallax="200">
-										Заточування
-										<span>Перукарського
-                                інструменту</span>
+										Створи свій
+										<span>унікальний образ</span>
 									</h2>
 									<div class="hero__subtitle" data-swiper-parallax="300">
 										<p>
-											Професійна заточування, перукарських, грумерських та інших спеціалізованих ножиць.
-                                Відновлюємо рівномірний і плавний хід полотен.
+											Ексклюзивні моделі, які підкреслять вашу індивідуальність та подарують впевненість у
+                                будь-якій ситуації.
 										</p>
 									</div>
 									<div class="hero__buttons" data-swiper-parallax="400">
-										<div class="hero__button-body" data-water-button="">
-											<canvas data-water-canvas="" aria-hidden="true"></canvas>
-											<a href="catalog.html" class="hero__btn btn--yellow btn--glass --icon-arrow">
-												<span>Ціни на заточування</span>
-											</a>
-										</div>
+										<a href="catalog.html" class="hero__btn btn--yellow --icon-arrow">Створити лук</a>
 									</div>
 								</div>
 							</div>
@@ -326,17 +247,17 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 				<section class="category">
 					<div class="category__container">
 						<div class="category__header section-header">
-							<h1 class="category__title title section-header__title">Послуги</h1>
+							<h1 class="category__title title section-header__title">Категорії</h1>
 							<ul class="category__list section-header__list">
 								<li>
 									<a href="catalog.html" class="category__link section-header__link --icon-arrow">Всі
-                            послуги</a>
+                            категорії</a>
 								</li>
 							</ul>
 						</div>
 						<div data-fls-slider="" class="category__slider swiper">
 							<div class="category__cards swiper-wrapper">
-								<div class="category__card swiper-slide">
+								<div data-fls-watcher="" class="category__card swiper-slide">
 									<div class="category__card-img __img">
 										<picture>
 											<source media="(max-width: 600px)" srcset="./assets/img/cat6-600.webp" type="image/webp">
@@ -347,10 +268,14 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 											<span class="--icon-arr-md"></span>
 										</a>
 									</div>
-									<div class="category__card-title">Заточування</div>
-									<div class="category__card-value">Манікюрного інструменту</div>
+									<div class="category__card-title">Чоловічий одяг</div>
+									<div class="category__card-value">
+										(
+										<span data-fls-digcounter="">423</span>
+										)
+									</div>
 								</div>
-								<div class="category__card swiper-slide">
+								<div data-fls-watcher="" class="category__card swiper-slide">
 									<div class="category__card-img __img">
 										<picture>
 											<source media="(max-width: 600px)" srcset="./assets/img/cat5-600.webp" type="image/webp">
@@ -361,10 +286,14 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 											<span class="--icon-arr-md"></span>
 										</a>
 									</div>
-									<div class="category__card-title">Заточування</div>
-									<div class="category__card-value">Перукарського інструменту</div>
+									<div class="category__card-title">Жіночий одяг</div>
+									<div class="category__card-value">
+										(
+										<span data-fls-digcounter="">512</span>
+										)
+									</div>
 								</div>
-								<div class="category__card swiper-slide">
+								<div data-fls-watcher="" class="category__card swiper-slide">
 									<div class="category__card-img __img">
 										<picture>
 											<source media="(max-width: 600px)" srcset="./assets/img/cat4-600.webp" type="image/webp">
@@ -375,46 +304,66 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 											<span class="--icon-arr-md"></span>
 										</a>
 									</div>
-									<div class="category__card-title">Заточування</div>
-									<div class="category__card-value">Грумерського інструменту</div>
+									<div class="category__card-title">Взуття</div>
+									<div class="category__card-value">
+										(
+										<span data-fls-digcounter="">286</span>
+										)
+									</div>
 								</div>
-								<div class="category__card swiper-slide">
+								<div data-fls-watcher="" class="category__card swiper-slide">
 									<div class="category__card-img __img">
-										<img src="./assets/img/cat3.jfif" alt="Image">
-										<a href="repair.html" class="category__card-arrow">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/cat3-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/cat3-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/cat3.webp">
+										</picture>
+										<a href="catalog.html" class="category__card-arrow">
 											<span class="--icon-arr-md"></span>
 										</a>
 									</div>
-									<div class="category__card-title">Профілактика</div>
-									<div class="category__card-value">Блоку управління</div>
+									<div class="category__card-title">Світшот та худі</div>
+									<div class="category__card-value">
+										(
+										<span data-fls-digcounter="">286</span>
+										)
+									</div>
 								</div>
-								<div class="category__card swiper-slide">
+								<div data-fls-watcher="" class="category__card swiper-slide">
 									<div class="category__card-img __img">
 										<picture>
 											<source media="(max-width: 600px)" srcset="./assets/img/cat2-600.webp" type="image/webp">
 											<source media="(max-width: 1200px)" srcset="./assets/img/cat2-1200.webp" type="image/webp">
 											<img alt="Image" src="./assets/img/cat2.webp">
 										</picture>
-										<a href="repair.html" class="category__card-arrow">
+										<a href="catalog.html" class="category__card-arrow">
 											<span class="--icon-arr-md"></span>
 										</a>
 									</div>
-									<div class="category__card-title">Профілактика</div>
-									<div class="category__card-value">Ручки фрезера</div>
+									<div class="category__card-title">Аксесуари</div>
+									<div class="category__card-value">
+										(
+										<span data-fls-digcounter="">146</span>
+										)
+									</div>
 								</div>
-								<div class="category__card swiper-slide">
+								<div data-fls-watcher="" class="category__card swiper-slide">
 									<div class="category__card-img __img">
 										<picture>
 											<source media="(max-width: 600px)" srcset="./assets/img/cat1-600.webp" type="image/webp">
 											<source media="(max-width: 1200px)" srcset="./assets/img/cat1-1200.webp" type="image/webp">
 											<img alt="Image" src="./assets/img/cat1.webp">
 										</picture>
-										<a href="repair.html" class="category__card-arrow">
+										<a href="catalog.html" class="category__card-arrow">
 											<span class="--icon-arr-md"></span>
 										</a>
 									</div>
-									<div class="category__card-title">Ремонт</div>
-									<div class="category__card-value">Ручки фрезера</div>
+									<div class="category__card-title">Головні убори</div>
+									<div class="category__card-value">
+										(
+										<span data-fls-digcounter="">98</span>
+										)
+									</div>
 								</div>
 							</div>
 						</div>
@@ -426,109 +375,212 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 				<section class="product">
 					<div class="product__container">
 						<div class="product__header section-header">
-							<h1 class="product__title title section-header__title">Популярні послуги</h1>
+							<h1 class="product__title title section-header__title">Популярні товари</h1>
 							<ul class="product__list section-header__list">
 								<li>
-									<a href="catalog.html" class="product__link section-header__link">Заточування</a>
+									<a href="catalog.html" class="product__link section-header__link">Усі товари</a>
 								</li>
 								<li>
-									<a href="repair.html" class="product__link section-header__link">Ремонт</a>
+									<a href="catalog.html" class="product__link section-header__link">Хіти продажу</a>
 								</li>
 								<li>
-									<a href="repair.html" class="product__link section-header__link">Профілактика</a>
+									<a href="catalog.html" class="product__link section-header__link">Новинки</a>
+								</li>
+								<li>
+									<a href="catalog.html" class="product__link section-header__link">Знижки</a>
 								</li>
 							</ul>
 						</div>
 						<div data-fls-slider="" class="product__slider swiper">
 							<div class="product__cards swiper-wrapper">
-								<div data-fls-watcher="" class="product__card card swiper-slide">
-									<a href="sharp.html?service=kuskachky" class="product__card-img card__img">
-										<img src="./assets/img/prod1.jfif" alt="Image">
-									</a>
-									<a href="sharp.html?service=kuskachky" class="product__card-title card__title">Заточування
-                            кусачок</a>
-									<div class="product__card-caption card__caption">Заточування</div>
-									<div class="card__price-body">
-										<div data-fls-watcher="" class="product__card-price card__price">
-											<span data-fls-digcounter="">170</span>
-											<span>грн</span>
-										</div>
-									</div>
-									<div class="product__card-buttons card__buttons">
-										<a href="sharp.html?service=kuskachky" class="product__card-btn card__btn btn--glass">Дізнатися більше</a>
-									</div>
-								</div>
-								<div data-fls-watcher="" class="product__card card swiper-slide">
-									<a href="sharp.html?service=noszkut" class="product__card-img card__img">
-										<img src="./assets/img/prod2.jfif" alt="Image">
-									</a>
-									<a href="sharp.html?service=noszkut" class="product__card-title card__title">Заточування
-                            ножничок</a>
-									<div class="product__card-caption card__caption">Заточування</div>
-									<div class="card__price-body">
-										<div data-fls-watcher="" class="product__card-price card__price">
-											<span data-fls-digcounter="">170</span>
-											<span>грн</span>
-										</div>
-									</div>
-									<div class="product__card-buttons card__buttons">
-										<a href="sharp.html?service=noszkut" class="product__card-btn card__btn btn--glass">Дізнатися більше</a>
-									</div>
-								</div>
-								<div data-fls-watcher="" class="product__card card swiper-slide">
-									<a href="sharp.html?service=pusher" class="product__card-img card__img">
-										<img src="./assets/img/prod3.jfif" alt="Image">
-									</a>
-									<a href="sharp.html?service=pusher" class="product__card-title card__title">Заточування
-                            пушера</a>
-									<div class="product__card-caption card__caption">Заточування</div>
-									<div class="card__price-body">
-										<div data-fls-watcher="" class="product__card-price card__price">
-											<span data-fls-digcounter="">120</span>
-											<span>грн</span>
-										</div>
-									</div>
-									<div class="product__card-buttons card__buttons">
-										<a href="sharp.html?service=pusher" class="product__card-btn card__btn btn--glass">Дізнатися більше</a>
-									</div>
-								</div>
-								<div data-fls-watcher="" class="product__card card swiper-slide">
-									<a href="sharp.html?service=handPiece" class="product__card-img card__img">
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
 										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/cat2-600.webp" type="image/webp">
-											<source media="(max-width: 1200px)" srcset="./assets/img/cat2-1200.webp" type="image/webp">
-											<img alt="Image" src="./assets/img/cat2.webp">
+											<source media="(max-width: 600px)" srcset="./assets/img/prod2-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/prod2-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/prod2.webp">
 										</picture>
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--yellow btn--red">-20%</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
 									</a>
-									<a href="sharp.html?service=handPiece" class="product__card-title card__title">Профілактика
-                            ручки</a>
-									<div class="product__card-caption card__caption">Профілактика</div>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.2" class="product__card-raiting-value card__raiting-value">4.2</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">98</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Пальто жіноче</a>
+									<div class="product__card-caption card__caption">Жіночий одяг</div>
 									<div class="card__price-body">
 										<div data-fls-watcher="" class="product__card-price card__price">
-											<span data-fls-digcounter="">350</span>
+											<span data-fls-digcounter="">3199</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span>3999</span>
 											<span>грн</span>
 										</div>
 									</div>
 									<div class="product__card-buttons card__buttons">
-										<a href="sharp.html?service=handPiece" class="product__card-btn card__btn btn--glass">Дізнатися більше</a>
+										<button data-addtocart-button="" data-id="1" data-title="Пальто жіноче" data-price="3199" data-image="assets/img/prod2.webp" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
 									</div>
 								</div>
-								<div data-fls-watcher="" class="product__card card swiper-slide">
-									<a href="sharp.html?service=controlUnit" class="product__card-img card__img">
-										<img src="./assets/img/cat3.jfif" alt="Image">
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/prod1-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/prod1-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/prod1.webp">
+										</picture>
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
 									</a>
-									<a href="sharp.html?service=controlUnit" class="product__card-title card__title">Ремонт
-                            блоку</a>
-									<div class="product__card-caption card__caption">Ремонт</div>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.8" class="product__card-raiting-value card__raiting-value">4.8</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">124</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Худі Nike Club</a>
+									<div class="product__card-caption card__caption">Чоловічий одяг</div>
 									<div class="card__price-body">
 										<div data-fls-watcher="" class="product__card-price card__price">
-											<small>ВІД</small>
-											<span data-fls-digcounter="">350</span>
+											<span data-fls-digcounter="">2499</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="2" data-title="Худі Nike Club" data-price="2499" data-image="assets/img/prod1.jpg" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/prod3-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/prod3-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/prod3.webp">
+										</picture>
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green btn--blue">Новинка</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.4" class="product__card-raiting-value card__raiting-value">4.4</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">203</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Кросівки Nike Air Force 1</a>
+									<div class="product__card-caption card__caption">Взуття</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">4999</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="3" data-title="Кросівки Nike Air Force 1" data-price="4999" data-image="assets/img/prod3.webp" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/prod4-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/prod4-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/prod4.webp">
+										</picture>
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green btn--red">-15%</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.5" class="product__card-raiting-value card__raiting-value">4.5</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">76</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Черевики жіночі</a>
+									<div class="product__card-caption card__caption">Взуття</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">5099</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span>5999</span>
 											<span>грн</span>
 										</div>
 									</div>
 									<div class="product__card-buttons card__buttons">
-										<a href="sharp.html?service=controlUnit" class="product__card-btn card__btn btn--glass">Дізнатися більше</a>
+										<button data-addtocart-button="" data-id="4" data-title="Черевики жіночі" data-price="5099" data-image="assets/img/prod4.jpg" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" data-fls-watcher="" class="product__card card swiper-slide">
+									<a href="product.html" class="product__card-img card__img card-img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/prod5-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/prod5-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/prod5.webp">
+										</picture>
+										<div class="product__card-img-items card__img-items">
+											<div class="product__card-label card__label btn--green">Хіт</div>
+											<div class="product__card-favorite card__favorite">
+												<span class="--icon-hearth"></span>
+											</div>
+										</div>
+									</a>
+									<div data-fls-watcher="" class="product__card-raiting card__raiting">
+										<div data-fls-rating="set" data-fls-rating-value="4.8" class="product__card-raiting-value card__raiting-value">4.8</div>
+										<div class="product__card-raiting-counter card__raiting-counter">
+											(
+											<span data-fls-digcounter="">65</span>
+											)
+										</div>
+									</div>
+									<a href="product.html" class="product__card-title card__title">Рюкзак The North Face</a>
+									<div class="product__card-caption card__caption">Аксесуари</div>
+									<div class="card__price-body">
+										<div data-fls-watcher="" class="product__card-price card__price">
+											<span data-fls-digcounter="">2199</span>
+											<span>грн</span>
+										</div>
+										<div class="product__card-price card__price-old">
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="product__card-buttons card__buttons">
+										<button data-addtocart-button="" data-id="5" data-title="Рюкзак The North Face" data-price="2199" data-image="assets/img/prod5.webp" class="product__card-btn card__btn btn--black --icon-cart">До кошика</button>
 									</div>
 								</div>
 							</div>
@@ -543,35 +595,31 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 						<div class="advantage__item">
 							<div class="advantage__img">
 								<picture>
-									<source media="(max-width: 600px)" srcset="./assets/img/knife-kuh-600.webp" type="image/webp">
-									<source media="(max-width: 1200px)" srcset="./assets/img/knife-kuh-1200.webp" type="image/webp">
-									<img alt="Image" src="./assets/img/knife-kuh.webp">
+									<source media="(max-width: 600px)" srcset="./assets/img/tourist-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/tourist-1200.webp" type="image/webp">
+									<img alt="Image" src="./assets/img/tourist.webp">
 								</picture>
 							</div>
 							<div class="advantage__item-text">
-								<div class="advantage__item-caption">Гострота, яку відчуваєш</div>
-								<h2 class="advantage__title">Заточування кухонних ножів</h2>
-								<div class="advantage__subtitle">
-									Повертаємо ножам гостроту та правильну геометрію леза, щоб кожен
-                        рух був точним, легким і комфортним.
-								</div>
+								<div class="advantage__item-caption">Для тих хто любить пригоди</div>
+								<h2 class="advantage__title">Туристичне спорядження</h2>
+								<div class="advantage__subtitle">Все для комфортних подорожей та активного відпочинку.</div>
 								<div class="advantage__buttons">
-									<div class="advantage__button-body" data-water-button="">
-										<canvas data-water-canvas="" aria-hidden="true"></canvas>
-										<a href="sharp.html?service=knifes" class="advantage__btn btn--yellow btn--glass">
-											<span>Детальніше про послугу</span>
-										</a>
-									</div>
+									<a href="catalog.html" class="advantage__btn btn--yellow --icon-arr-md">Перейти до каталогу</a>
 								</div>
 							</div>
 							<div class="advantage__item-icons">
 								<div class="advantage__item-icon">
 									<div class="advantage__item-icon-ico --icon-prize"></div>
-									<div class="advantage__item-icon-title">Професійне обладнання</div>
+									<div class="advantage__item-icon-title">Надійні бренди</div>
 								</div>
 								<div class="advantage__item-icon">
 									<div class="advantage__item-icon-ico --icon-shield"></div>
 									<div class="advantage__item-icon-title">Гарантія якості</div>
+								</div>
+								<div class="advantage__item-icon">
+									<div class="advantage__item-icon-ico --icon-truck"></div>
+									<div class="advantage__item-icon-title">Швидка доставка</div>
 								</div>
 							</div>
 						</div>
@@ -579,44 +627,32 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 							<div class="advantage__card">
 								<div class="advantage__img">
 									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/Price-handler-600.webp" type="image/webp">
-										<source media="(max-width: 1200px)" srcset="./assets/img/Price-handler-1200.webp" type="image/webp">
-										<img alt="Image" src="./assets/img/Price-handler.webp">
+										<source media="(max-width: 600px)" srcset="./assets/img/nike-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/nike-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/nike.webp">
 									</picture>
 								</div>
 								<div class="advantage__card-text">
-									<div class="advantage__card-title">Чистка ручки фрезера від пилу</div>
-									<div class="advantage__subtitle">
-										Ретельно очищаємо ручку фрезера від пилу та залишків матеріалу,
-                            допомагаючи підтримувати ручку у чистоті та продовжувати термін його служби.
-									</div>
+									<div class="advantage__card-title">Взуття, яке завжди в моді</div>
+									<div class="advantage__subtitle">Кеди кросівки, черевики для будь-якого сезону</div>
 									<div class="advantage__buttons">
-										<div class="advantage__button-body" data-water-button="">
-											<canvas data-water-canvas="" aria-hidden="true"></canvas>
-											<a href="repair.html" class="advantage__btn btn--yellow btn--glass --icon-arr-md">Дізнатися більше</a>
-										</div>
+										<a href="catalog.html" class="advantage__btn btn--yellow btn--white --icon-arr-md">Перейти</a>
 									</div>
 								</div>
 							</div>
 							<div class="advantage__card">
 								<div class="advantage__img">
 									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/her1-600.webp" type="image/webp">
-										<source media="(max-width: 1200px)" srcset="./assets/img/her1-1200.webp" type="image/webp">
-										<img alt="Image" src="./assets/img/her1.webp">
+										<source media="(max-width: 600px)" srcset="./assets/img/axes-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/axes-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/axes.webp">
 									</picture>
 								</div>
 								<div class="advantage__card-text">
-									<div class="advantage__card-title">Ремонт блоку управління</div>
-									<div class="advantage__subtitle">
-										Діагностуємо та ремонтуємо фрезери, апарати для манікюру та
-                            інше
-									</div>
+									<div class="advantage__card-title">Стильні аксесуари</div>
+									<div class="advantage__subtitle">Деталі, які створюють образ</div>
 									<div class="advantage__buttons">
-										<div class="advantage__button-body" data-water-button="">
-											<canvas data-water-canvas="" aria-hidden="true"></canvas>
-											<a href="repair.html" class="advantage__btn btn--yellow btn--glass --icon-arr-md">Дізнатися більше</a>
-										</div>
+										<a href="catalog.html" class="advantage__btn btn--yellow btn--white --icon-arr-md">Перейти</a>
 									</div>
 								</div>
 							</div>
@@ -626,35 +662,224 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 				<div class="delivery">
 					<div class="delivery__container">
 						<div class="delivery__item">
-							<div class="delivery__item-icon --icon-quality"></div>
+							<div class="delivery__item-icon --icon-truck"></div>
 							<div class="delivery__item-text">
-								<div class="delivery__title">Професійне обладнання</div>
-								<div data-fls-watcher="" class="delivery__subtitle">Досвідченні майстри</div>
+								<div class="delivery__title">Безкоштовна доставка</div>
+								<div data-fls-watcher="" class="delivery__subtitle">
+									При замовленні від
+									<span data-fls-digcounter="">2000</span>
+									грн
+								</div>
 							</div>
 						</div>
 						<div class="delivery__item">
 							<div class="delivery__item-icon --icon-shield"></div>
 							<div class="delivery__item-text">
-								<div class="delivery__title">Гарантія на всі види робіт</div>
-								<div class="delivery__subtitle">Гарантія на заточування 10 днів</div>
+								<div class="delivery__title">Гарантія повернення</div>
+								<div data-fls-watcher="" class="delivery__subtitle">Протягом 14 днів.</div>
 							</div>
 						</div>
 						<div class="delivery__item">
-							<div class="delivery__item-icon --icon-clock"></div>
+							<div class="delivery__item-icon --icon-consultation"></div>
 							<div class="delivery__item-text">
-								<div class="delivery__title">Швидке виконання</div>
-								<div class="delivery__subtitle">Від 1 дня</div>
+								<div class="delivery__title">Підтримка 24/7</div>
+								<div data-fls-watcher="" class="delivery__subtitle">Допоможемо у будь-який час</div>
 							</div>
 						</div>
 						<div class="delivery__item">
-							<div class="delivery__item-icon --icon-heart"></div>
+							<div class="delivery__item-icon --icon-best-price"></div>
 							<div class="delivery__item-text">
-								<div class="delivery__title">Дбаємо</div>
-								<div data-fls-watcher="" class="delivery__subtitle">Про ваш інструмент і техніку</div>
+								<div class="delivery__title">Зручна оплата</div>
+								<div data-fls-watcher="" class="delivery__subtitle">Карткою, Aple Pay, Google Pay</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<section id="blog" class="blog">
+					<div class="blog__container">
+						<div class="blog__caption">Блог</div>
+						<div class="blog__header section-header">
+							<h1 class="blog__title title section-header__title">Новини, стиль та натхнення</h1>
+							<ul class="blog__list section-header__list">
+								<li>
+									<a href="#" class="blog__link section-header__link --icon-arr-md">Всі статті</a>
+								</li>
+							</ul>
+						</div>
+						<div class="blog__items">
+							<div class="blog__item">
+								<div class="blog__item-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/blog1-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/blog1-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/blog1.webp">
+									</picture>
+								</div>
+								<div class="blog__item-text">
+									<div class="blog__item-label">
+										<span>СТИЛЬ</span>
+										<span>/</span>
+										<span>18.09.2026</span>
+									</div>
+									<div class="blog__item-title">Як створити стильний осінній гардероб</div>
+									<div class="blog__item-subtitle">
+										Розповідаємо про базові речі, які допоможуть створити актуальні
+                            образи щодня.
+									</div>
+								</div>
+								<div data-fls-showmore="" class="blog__item-article">
+									<div data-fls-showmore-content="0" class="blog__item-article-body">
+										<p data-scroll-text="">
+											Осінь — чудовий час, щоб оновити гардероб і додати образам більше
+                                затишку та характеру.
+                                При цьому не обов’язково купувати багато нових речей. Головне — правильно підібрати базу
+                                та навчитися поєднувати її між собою.
+										</p>
+										<p data-scroll-text="">
+											Почніть із універсального верхнього одягу. Класичне пальто, тренч або
+                                лаконічна куртка
+                                легко поєднуються як із джинсами, так і з сукнями чи спідницями. Для прохолодних днів
+                                варто додати теплий светр нейтрального кольору — бежевого, сірого, молочного або
+                                чорного.
+										</p>
+										<p data-scroll-text="">
+											Особливу увагу приділіть взуттю. Черевики або кросівки у базових
+                                відтінках стануть
+                                основою багатьох повсякденних образів. Аксесуари допоможуть зробити образ цікавішим:
+                                шарф, шкіряна сумка, ремінь або окуляри можуть повністю змінити звичайний комплект.
+										</p>
+										<p data-scroll-text="">
+											Не бійтеся використовувати багатошаровість. Сорочка під светром,
+                                футболка під жакетом або
+                                жилет поверх сорочки дозволять створювати нові комбінації та комфортно адаптуватися до
+                                зміни температури.
+										</p>
+										<p data-scroll-text="">
+											І головне — обирайте речі, які відповідають вашому стилю та способу
+                                життя. Стильний
+                                гардероб — це не кількість одягу, а можливість легко створювати різні образи з улюблених
+                                речей.
+										</p>
+									</div>
+									<button hidden data-fls-showmore-button="" type="button" class="blog__item-btn">
+										<span class="--icon-arrow">Читати статтю</span>
+										<span>Закрити</span>
+									</button>
+								</div>
+							</div>
+							<div class="blog__item">
+								<div class="blog__item-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/blog2-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/blog2-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/blog2.webp">
+									</picture>
+								</div>
+								<div class="blog__item-text">
+									<div class="blog__item-label">
+										<span>МОДА</span>
+										<span>/</span>
+										<span>12.09.2026</span>
+									</div>
+									<div class="blog__item-title">5 речей, які повинні бути у кожному гардеробі</div>
+									<div class="blog__item-subtitle">
+										Простий список універсальних речей, які легко поєднувати між
+                            собою
+									</div>
+								</div>
+								<div data-fls-showmore="" class="blog__item-article">
+									<div data-fls-showmore-content="0" class="blog__item-article-body">
+										<p data-scroll-text="">
+											Перша — базова футболка. Біла, чорна або молочна модель стане чудовою
+                                основою для повсякденних образів. Її можна носити з джинсами, брюками, спідницями або
+                                під жакет.
+										</p>
+										<p data-scroll-text="">
+											Друга — якісні джинси. Обирайте фасон, який підходить саме вам. Прямі
+                                або трохи вільні моделі залишаються універсальним варіантом і легко вписуються в різні
+                                стилі.
+										</p>
+										<p data-scroll-text="">
+											Третя — класичний жакет. Він здатен зробити навіть простий образ більш
+                                зібраним. Жакет можна поєднати з футболкою та джинсами або одягнути поверх сукні.
+										</p>
+										<p data-scroll-text="">
+											Четверта — зручне взуття. Кросівки або лаконічні черевики нейтрального
+                                кольору допоможуть створити багато практичних образів на кожен день.
+										</p>
+										<p data-scroll-text="">
+											І нарешті, п’ята річ — універсальна сумка. Обирайте модель, яка
+                                підходить до більшості ваших речей та достатньо містка для повсякденних справ.
+                                Головне — не кількість речей, а їхня універсальність. Правильно підібрана база дозволяє
+                                легко експериментувати зі стилем і створювати нові образи без постійного оновлення
+                                гардероба.
+										</p>
+									</div>
+									<button hidden data-fls-showmore-button="" type="button" class="blog__item-btn">
+										<span class="--icon-arrow">Читати статтю</span>
+										<span>Закрити</span>
+									</button>
+								</div>
+							</div>
+							<div class="blog__item">
+								<div class="blog__item-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/blog3-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/blog3-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/blog3.webp">
+									</picture>
+								</div>
+								<div class="blog__item-text">
+									<div class="blog__item-label">
+										<span>ТРЕНДИ</span>
+										<span>/</span>
+										<span>05.09.2026</span>
+									</div>
+									<div class="blog__item-title">Головні тренди сезону 2026</div>
+									<div class="blog__item-subtitle">
+										Розбираємо нові тенденції та показуємо як додати їх у свій
+                            стиль
+									</div>
+								</div>
+								<div data-fls-showmore="" class="blog__item-article">
+									<div data-fls-showmore-content="0" class="blog__item-article-body">
+										<p data-scroll-text="">
+											Новий сезон 2026 року пропонує цікаве поєднання класики, виразних
+                                деталей та експериментів із формами. Цього року мода стає більш особистою: звичні базові
+                                речі отримують нове звучання завдяки кольорам, фактурам і незвичайним поєднанням.
+										</p>
+										<p data-scroll-text="">
+											Одним із помітних трендів залишається багатошаровість. Сорочки, тонкі
+                                светри, жакети та пальта можна комбінувати між собою, створюючи не лише стильні, а й
+                                практичні образи для прохолодної погоди.
+										</p>
+										<p data-scroll-text="">
+											Особливу увагу варто звернути на жакети та костюми. Класичний крій стає
+                                більш сучасним завдяки акцентним плечам, незвичайним пропорціям та вільній посадці.
+                                Також повертаються костюми зі спідницями, які легко адаптувати як для офісу, так і для
+                                повсякденного образу.
+										</p>
+										<p data-scroll-text="">
+											У кольорах сезон пропонує більше сміливості. Насичений червоний,
+                                електричний синій, фіолетовий та теплі природні відтінки можуть стати яскравим акцентом
+                                навіть у простому образі.
+										</p>
+										<p data-scroll-text="">
+											Не варто забувати й про деталі: флоральні принти, оксамит, мереживо,
+                                декоративні елементи та фактурні матеріали допоможуть зробити образ цікавішим.
+                                Головний принцип сезону — не боятися експериментувати та адаптувати тренди під власний
+                                стиль.
+										</p>
+									</div>
+									<button hidden data-fls-showmore-button="" type="button" class="blog__item-btn">
+										<span class="--icon-arrow">Читати статтю</span>
+										<span>Закрити</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 			<footer id="contacts" class="footer" data-fls-footer="">
 				<div class="footer__bg __img">
@@ -674,54 +899,39 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 									<img alt="Image" src="./assets/img/sv_logo-1.webp">
 								</picture>
 							</div>
-							<div class="footer__text-title">Професійний ремонт та обслуговування</div>
+							<div class="footer__text-title">Підпишіться на новини та акції</div>
 							<div class="footer__text-caption">
-								<p>Ремонтуємо та обслуговуємо фрезери й інше обладнання для манікюру.</p>
-								<p>Допомагаємо підтримувати вашу техніку в справному стані.</p>
+								<p>Ми створюємо стиль для вашого комфорту, свободи та впевненості.</p>
+								<p>Будьте собою. Будьте в стилі</p>
 							</div>
 							<div class="footer__text-icons">
 								<a href="#" class="footer__text-ico --icon-insta"></a>
+								<a href="#" class="footer__text-ico --icon-facebook"></a>
+								<a href="#" class="footer__text-ico --icon-youtube"></a>
 								<a href="#" class="footer__text-ico --icon-telegram"></a>
 							</div>
 						</div>
-						<div class="footer__subscribe">
-							<div class="footer__subscribe-title">Підпишіться на наші новини</div>
-							<div class="footer__subscribe-subtitle">Отримуйте знижки, новинки та ексклюзивні пропозиції</div>
-							<form action="#" class="footer__subscribe-form">
-								<input type="text" placeholder="Ваш email" class="footer__subscribe-input">
-								<button class="footer__subscribe-button --icon-arrow"></button>
-							</form>
-						</div>
 						<div data-fls-spollers="890,max" class="footer__navigation">
 							<details class="footer__navigation-item">
-								<summary class="footer__navigation-title">Послуги</summary>
+								<summary class="footer__navigation-title">Каталог</summary>
 								<ul class="footer__navigation-list">
 									<li>
-										<a href="catalog.html" class="footer__navigation-link">Заточування манікюрних
-                                інструментів</a>
+										<a href="#" class="footer__navigation-link">Чоловікам</a>
 									</li>
 									<li>
-										<a href="sharp.html?service=parikmakherskie" class="footer__navigation-link">Заточування
-                                перукарських ножиць</a>
+										<a href="#" class="footer__navigation-link">Жінкам</a>
 									</li>
 									<li>
-										<a href="sharp.html?service=portnovskie" class="footer__navigation-link">Заточування
-                                кравецьких ножиць</a>
+										<a href="#" class="footer__navigation-link">Взуття</a>
 									</li>
 									<li>
-										<a href="sharp.html?service=knifes" class="footer__navigation-link">Заточування кухонних
-                                ножів</a>
+										<a href="#" class="footer__navigation-link">Аксесуари</a>
 									</li>
 									<li>
-										<a href="sharp.html?service=handPiece" class="footer__navigation-link">Ремонт ручки
-                                фрезера</a>
+										<a href="#" class="footer__navigation-link">Новинки</a>
 									</li>
 									<li>
-										<a href="sharp.html?service=controlUnit" class="footer__navigation-link">Ремонт блоку
-                                управління</a>
-									</li>
-									<li>
-										<a href="repair.html" class="footer__navigation-link">Профілактика, чистка</a>
+										<a href="#" class="footer__navigation-link">Знижки</a>
 									</li>
 								</ul>
 							</details>
@@ -735,24 +945,42 @@ class="cart__quantity-btn cart__quantity-btn--plus">
 										<a href="#" class="footer__navigation-link">Повернення</a>
 									</li>
 									<li>
-										<a href="contacts.html" class="footer__navigation-link">Контакти</a>
+										<a href="#" class="footer__navigation-link">Обмін товару</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Розмірна сітка</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Контакти</a>
 									</li>
 								</ul>
 							</details>
 						</div>
+						<div class="footer__subscribe">
+							<div class="footer__subscribe-title">Підпишіться на наші новини</div>
+							<div class="footer__subscribe-subtitle">Отримуйте знижки, новинки та ексклюзивні пропозиції</div>
+							<form action="#" class="footer__subscribe-form">
+								<input type="text" placeholder="Ваш email" class="footer__subscribe-input">
+								<button class="footer__subscribe-button --icon-arrow"></button>
+							</form>
+							<div class="footer__subscribe-buttons">
+								<a href="#" class="footer__subscribe-link __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/astore-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/astore-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/astore.webp">
+									</picture>
+								</a>
+								<a href="#" class="footer__subscribe-link __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/gplay-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/gplay-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/gplay.webp">
+									</picture>
+								</a>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="button-action">
-					<canvas class="button-action__water"></canvas>
-					<button class="button-action__btn cart-action">
-						<span class="button-action__move">
-							<picture>
-								<source media="(max-width: 600px)" srcset="./assets/img/mass1-600.webp" type="image/webp">
-								<source media="(max-width: 1200px)" srcset="./assets/img/mass1-1200.webp" type="image/webp">
-								<img alt="Image" src="./assets/img/mass1.webp">
-							</picture>
-						</span>
-					</button>
 				</div>
 			</footer>
 		</div>
